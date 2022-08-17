@@ -12,8 +12,10 @@ formEle.addEventListener('submit', function(event){
 
     let obj = Object.fromEntries(formData.entries())
 
+    // console.log(obj)
     displayData(obj)
 
+    localStorage.details = JSON.stringify(obj)
     formEle.reset()
 })
 
