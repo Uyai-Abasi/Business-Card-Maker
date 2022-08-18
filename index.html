@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
-</head>
-
-<body> 
-    <!-- <div class="card" id="capture" style="padding: 10px; background: #f5da55">
-        <h4 style="color: #000;">Hello world!</h4>
-    </div> -->
-    <!-- <button > click to screen shot</button> -->
-<script src="/script.js"></script>
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
     <title>business card</title>
 </head>
 <body>
@@ -37,7 +23,7 @@
 <input type="submit" id="button" value="Generate">
 </form> 
 <div class="card" id="capture" style="display: flex;">
-    <img src="/pattern.jpg" alt="" style="height: 300px; width: 150px;  border-bottom-left-radius: 20px; border-top-left-radius: 
+    <img src="/pattern.jpg" alt="" style="height: 300px; width: 200px;  border-bottom-left-radius: 20px; border-top-left-radius: 
     20px;">
     <h4 style="color: #000;">Hello world!</h4>
 </div>
@@ -45,12 +31,11 @@
 </main> 
 <section>
     <button onclick="screenshot()">Download</button>
-    <label for="TEMPLATES" class="button">
-        <button onclick="change()" class=btn>temp 1</button>
-        <button onclick="pic()" class=btn>temp 2</button>
-        <button onclick="pict()" class=btn>temp 3</button>
-        
-    </label>
+    <div class="buttons">
+        <button class=btn>temp 1</button>
+        <button class=btn>temp 2</button>
+        <button class=btn>temp 3</button>
+    </div>
 </section>
 <script src="/script.js"></script>
 
