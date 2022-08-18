@@ -57,15 +57,33 @@ input{
     
 }
 .card{
-    border:1px solid hotpink;
+    border:1px solid rgb(160, 155, 158);
     border-radius: 20px;
     width: 500px;
+/* border: solid blue; */
     height: 300px;
-    box-shadow: 50px 50px 50px -5px rgba(255, 0, 119, 0.13) inset;
+/* align-items: center; */
+justify-content: center;
+background-size: cover;
+background-repeat: no-repeat;
+    display: flex;
+    color:aqua;
+   
+}
+
+.text{
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    justify-content: space-evenly;
+    /* border:  solid red; */
+}
+
+img{
+    height: 300px; 
+    width: 200px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
 }
 
 section{
@@ -101,6 +119,24 @@ section button:hover{
     margin-top: 10px;
    
 }
+
+.fullname{
+    right: 80px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.email{
+    font-size: 20px;
+    right: 40px;
+    text-indent: 2px 2px 4px 5px;
+    font-style: italic;
+}
+.business{
+  font-style: italic;
+}
+
 @media only screen and (max-width:700px) {
 main{
     /* border: solid lawngreen; */

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
     <title>business card</title>
 </head>
 <body>
@@ -12,30 +15,34 @@
    <main>
 <form>
 <label for="name">NAME</label>
-<input type="text" name="name" id="name" >
+<input type="text" name="name" id="name" required>
 <label for="business">BUSINESS</label>
-<input type="text" name="business" id="business">
+<input type="text" name="business" id="business" required>
 <label for="email">EMAIL</label>
-<input type="email" name="email" id="email">
+<input type="email" name="email" id="email" required>
 <input type="submit" id="button" value="Generate">
 </form> 
-<div class="card">  
-    <p></p>
-    <p></p>  
-    <p></p>  
+ 
 
+<div class="card" id="capture" style="display: flex;background-image: url(/images/stylish_liquidity_PSD_business_card_template.jpg);">
+  <div class="img"> </div>
+  <div class="text">
+  <p></p>
+  <p></p>  
+  <p></p> 
+</div>
 </div>
 
 </main> 
 <section>
-    <button>Download</button>
-    <label for="TEMPLATES" class="button">
+    <button onclick="screenshot()">Download</button>
+    <div class="buttons">
         <button class=btn>temp 1</button>
         <button class=btn>temp 2</button>
         <button class=btn>temp 3</button>
-        
-    </label>
+    </div>
 </section>
 <script src="/script.js"></script>
+
 </body>
 </html>
