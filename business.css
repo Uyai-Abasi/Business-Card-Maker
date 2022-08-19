@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    font-size: 40px;
+text-decoration: none;
+}
+
+a:hover{
+    color: rgb(27, 96, 245);
+   text-shadow: 1px 1px 5px;
+}
+div{
+ 
+    width: 500px;
+   height: 300px;
+   margin: 50px auto;
+   background-image: url(/images/modern-professional-business-card_1435-1124.jpg);
+   background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 10px;
+}

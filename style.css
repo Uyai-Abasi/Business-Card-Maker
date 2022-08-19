@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+/* border: solid pink ; */
+text-decoration: none;
+color: #6b7d83;
+font-size: 40px;
+}
+a:hover {
+    
+   color: red;
+text-shadow:1px 1px 5px;
+  }
+main{
+    /* border: solid rgb(138, 59, 59); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    height: 350px;
+}
+form{
+    /* border: solid black; */
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    color:white;
+    opacity: 0.5;
+ border-radius: 20px;
+ box-shadow: 10px 10px 10px;
+    width: 500px;
+   height: 300px;
+
+
+}
+input{
+    border: solid rgba(243, 5, 5);
+    border-width:0px 0px 5px 0px;
+    width: 450px;
+    border-radius: 5px;
+    height: 30px;
+}
+#button{
+    border-radius: 5px;
+    border: 4px solid rgba(243, 5, 5);
+    align-self: center;
+    width: 100px;
+    font-size: 20px;
+    color:rgba(243, 5, 5);
+    background-color: white;
+    cursor: pointer;
+    
+}
+.card{
+    border:1px solid rgb(160, 155, 158);
+    border-radius: 20px;
+    width: 500px;
+/* border: solid blue; */
+    height: 300px;
+/* align-items: center; */
+justify-content: center;
+background-size: cover;
+background-repeat: no-repeat;
+    display: flex;
+    color:aqua;
+   
+}
+
+.text{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    /* border:  solid red; */
+}
+
+img{
+    height: 300px; 
+    width: 200px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+section{
+    /* border: solid rebeccapurple; */
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    
+}
+section button{
+    color: #6b7d83;
+    cursor: pointer;
+    border: solid  rgb(240, 241, 238);
+    border-radius: 15px;
+    box-shadow:1px 3px 2px;
+    width: 90px;
+    height: 50px;
+    font-weight: 30px;
+    letter-spacing: 2.5px;
+   font-size: 15px; 
+}
+section button:hover{
+    color:rgba(238, 8, 46, 0.897);
+    background-color: #6b7d83;
+    
+}
+   
+.btn{
+   
+    margin-top: 10px;
+   
+}
+
+.fullname{
+    right: 80px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.email{
+    font-size: 20px;
+    right: 40px;
+    text-indent: 2px 2px 4px 5px;
+    font-style: italic;
+}
+.business{
+  font-style: italic;
+}
+
+@media only screen and (max-width:700px) {
+main{
+    /* border: solid lawngreen; */
+    display: block;
+    height: max-content;
+   
+}
+form{
+    /* border: solid purple; */
+margin:50px auto;
+width: max-content;
+}
+
+
+}
