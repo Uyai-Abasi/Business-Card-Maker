@@ -1,8 +1,6 @@
-
 let formEle = document.forms[0]
 let card= document.getElementsByTagName('div')[0]
 let text = document.getElementsByClassName("text")[0]
-
 
 formEle.addEventListener('submit', function(event){
     event.preventDefault();
@@ -35,7 +33,7 @@ function displayData(data){
 }
 let filtersOut = document.getElementById("capture")
 let img = document.getElementsByTagName('img')[0]
-let div = document.getElementsByClassName("buttons")
+let div = document.getElementsByClassName("buttons") 
 
 let templates = [...div[0].children]
 
