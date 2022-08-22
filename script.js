@@ -66,10 +66,24 @@ templates.forEach((element, index)=> {
 
 
 console.log(templates)
-function screenshot(){
+// function screenshot(){
 
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-        document.body.appendChild(canvas)
-    });
+//     html2canvas(document.querySelector("#capture")).then(canvas => {
+//         document.body.appendChild(canvas)
+//     });
+// }
+
+function screenshot() {
+    let opt = {
+        margin:       1,
+        filename:     'businesscard template',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+ const element = document.getElementById('capture')
+ html2pdf()
+ .set(opt)
+ .from(element)
+ .save()   
 }
-
